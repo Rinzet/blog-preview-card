@@ -1,0 +1,11 @@
+$Gray-500: hsl(0, 0%, 42%);
+$Gray-950: hsl(0, 0%, 7%);
+
+@mixin typo-font ($font-weight, $font-size, $font-color) {
+    font-family: 'Figtree', sans-serif;
+    font-weight: $font-weight;
+    font-size: clamp(#{$font-size}, 3vw, #{($font-size * 1.17)});
+    color: $font-color;
+    line-height: 150%;
+    letter-spacing: 0;
+}
